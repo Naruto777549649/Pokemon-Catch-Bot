@@ -25,7 +25,7 @@ collection = db['pokedex']
 
 [
 # Sample Pokémon data in a list
-polemon_data = [
+pokemon_data = [
     {"name": "Bulbasaur", "catch_rate": 45},
     {"name": "Ivysaur", "catch_rate": 45},
     {"name": "Venusaur", "catch_rate": 45},
