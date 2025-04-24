@@ -22,6 +22,7 @@ time.tzset()
 client = MongoClient('{Your mongodb url}')
 db = client['pokemon_bot']
 collection = db['pokedex']
+
     {"name": "Bulbasaur", "catch_rate": 45},
     {"name": "Ivysaur", "catch_rate": 45},
     {"name": "Venusaur", "catch_rate": 45},
