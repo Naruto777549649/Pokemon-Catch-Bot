@@ -23,8 +23,9 @@ client = MongoClient('{Your mongodb url}')
 db = client['pokemon_bot']
 collection = db['pokedex']
 
+[
 # Sample Pokémon data in a list
-pokemon_data = [
+polemon_data = [
     {"name": "Bulbasaur", "catch_rate": 45},
     {"name": "Ivysaur", "catch_rate": 45},
     {"name": "Venusaur", "catch_rate": 45},
