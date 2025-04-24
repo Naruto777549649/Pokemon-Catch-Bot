@@ -693,9 +693,9 @@ message_count = 0
 announced_pokemon = None
 
 # Create a Pyrogram client
-api_id = your api id
-api_hash = 'your api hash'
-bot_token = 'telegram bot token'
+api_id = 25698862
+api_hash = '7d7739b44f5f8c825d48cc6787889dbc'
+bot_token = '7728636876:AAHbkV_DljkD-X_pO1u6VpcoWwleVemxozA'
 app = Client("pokemon_bot", api_id, api_hash, bot_token=bot_token)
 
 
