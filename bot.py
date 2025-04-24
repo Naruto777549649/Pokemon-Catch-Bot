@@ -6,14 +6,22 @@ from pyrogram import Client, filters, idle
 from pokebase import pokemon
 from uuid import uuid4
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+import time
+import datetime
+
+# Sync system clock wait (Telegram ke liye safer)
+print("Waiting 5 seconds to ensure time sync...")
+time.sleep(5)  # This adds a 5 second delay for time synchronization
+print("Bot starting at:", datetime.datetime.now())
+
+# Set timezone to UTC (optional but good practice)
+os.environ['TZ'] = 'UTC'
+time.tzset()
 
 # Connect to MongoDB
 client = MongoClient('{Your mongodb url}')
 db = client['pokemon_bot']
 collection = db['pokedex']
-
-# Database of available Pokémon, you can add more Pokemon with this format
-pokemon_database = [
     {"name": "Bulbasaur", "catch_rate": 45},
     {"name": "Ivysaur", "catch_rate": 45},
     {"name": "Venusaur", "catch_rate": 45},
